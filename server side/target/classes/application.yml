@@ -1,0 +1,26 @@
+server:
+  port: 8080
+#数据库配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db01
+    username: root
+    password: 1234
+#Mybatis配置
+  mybatis:
+    configuration:
+      log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+      map-underscore-to-camel-case: true
+#上传文件大小的配置
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 10000MB
+#阿里云oss配置
+aliyun:
+  oss:
+    endpoint: https://oss-cn-hangzhou.aliyuncs.com
+    accessKeyId: LTAI5tRazXfZM77mZ9ToV16w
+    accessKeySecret: eZqIG0qpeUwCJgaw2wqyhCetmLAvoh
+    bucketName: yeqi666com
