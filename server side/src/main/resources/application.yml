@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url:
-    username:
-    password:
+    url: jdbc:mysql://localhost:3306/db01
+    username: root
+    password: 1234
 #Mybatis配置
   mybatis:
     configuration:
@@ -20,9 +20,13 @@ spring:
 #阿里云oss配置
 aliyun:
   oss:
+    # 阿里云oss的访问域名
     endpoint:
+    # 阿里云oss的访问密钥
     accessKeyId:
+    # 阿里云oss的访问密钥
     accessKeySecret:
+    # 阿里云oss的bucket名称
     bucketName:
 
 #Spring事务日志管理
